@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard com Menu Lateral</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <header class="d-flex align-items-center">
+        <div class="logo">
+            <img src="src/img/ifood-logo.png" alt="">
+        </div>
+    </header>
+
+    <div class="d-flex">
+        <div class="sidebar" id="sidebar">
+            <!-- Botão para abrir/fechar o menu -->
+            <button class="toggle-btn" id="toggle-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <!-- Menu lateral -->
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span class="link-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="link-text">Detalhes dos pedidos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="link-text">Balanço Financeiro</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="link-text">Relatórios</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-user"></i>
+                        <span class="link-text">Meu perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dashboard col">
+            <div class="row">
+                <div class="col-3 bg-primary">
+                    <div class="info-box">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Receita Total</span>
+                            <span class="info-icon">Info</span>
+                        </div>
+                        <h2>R$4.000,00</h2>
+                        <div class="d-flex justify-content-between">
+                            <span>Ganhos <i class="fas fa-arrow-up"></i></span>
+                            <span>Perdas <i class="fas fa-arrow-down"></i></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-3 bg-secondary">Coluna 2</div>
+                <div class="col-3 bg-success">Coluna 3</div>
+                <div class="col-3 bg-danger">Coluna 4</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
